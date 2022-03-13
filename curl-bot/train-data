@@ -1,0 +1,51 @@
+# send-request
+- input: send get request to http://abc.com
+  entities:
+    method:
+      - get
+    url:
+      - http://abc.com
+- input: post to http://example.com
+  entities:
+    method:
+      - post
+    url:
+      - http://example.com
+- input: load https://xyz.com
+  entities:
+    method:
+      - get
+    url:
+      - https://xyz.com
+- input: delete https://bbc.com
+  entities:
+    method:
+      - delete
+    url:
+      - https://bbc.com
+- input: send put request https://bbcs.com
+  entities:
+    method:
+      - put
+    url:
+      - https://bbcs.com
+- input: request https bbcs.com
+  entities:
+    url:
+      - https://bbcs.com
+- input: get http xyz.io
+  entities:
+    method:
+      - get
+    url:
+      - http://xyz.io
+
+# set-request-body
+- input: set id 10001 title t1
+  entities:
+    requestBody:
+      - id 10001 title t1
+- input: request body _row 1 _emp_id E0001
+  entities:
+    requestBody:
+      - _row 1 _emp_id E0001
